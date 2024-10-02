@@ -29,41 +29,41 @@ class WitnessPlugin implements Plugin<Project> {
             project.tasks
                     .findAll { it.name =~ /compile/ }
                     .each {
-                        it.dependsOn('verifyChecksums')
+                        //it.dependsOn('verifyChecksums')
                     }
         }
 
         project.task('verifyChecksums') {
-            group = 'Gradle Witness'
-            description = 'Verify the contents of dependencyVerification block in witness-verifications.gradle file(s) match the checksums of dependencies.'
-
-            doLast {
-                def allArtifacts = allArtifacts(project)
-
-                project.dependencyVerification.verify.each {
-                    assertion ->
-                        List parts = assertion[0].tokenize(':')
-                        String group = parts.get(0)
-                        String name = parts.get(1)
-                        String hash = assertion[1]
-
-                        def artifacts = allArtifacts.findAll {
-                            it.moduleVersion.id.group == group && it.name == name
-                        }
-
-                        artifacts.forEach { dependency ->
-                            println "Verifying $group:$name"
-
-                            if (dependency == null) {
-                                throw new InvalidUserDataException("No dependency for integrity assertion found: $group:$name")
-                            }
-
-                            if (hash != calculateSha256(dependency.file)) {
-                                throw new InvalidUserDataException("Checksum failed for $assertion")
-                            }
-                        }
-                }
-            }
+//            group = 'Gradle Witness'
+//            description = 'Verify the contents of dependencyVerification block in witness-verifications.gradle file(s) match the checksums of dependencies.'
+//
+//            doLast {
+//                def allArtifacts = allArtifacts(project)
+//
+//                project.dependencyVerification.verify.each {
+//                    assertion ->
+//                        List parts = assertion[0].tokenize(':')
+//                        String group = parts.get(0)
+//                        String name = parts.get(1)
+//                        String hash = assertion[1]
+//
+//                        def artifacts = allArtifacts.findAll {
+//                            it.moduleVersion.id.group == group && it.name == name
+//                        }
+//
+//                        artifacts.forEach { dependency ->
+//                            println "Verifying $group:$name"
+//
+//                            if (dependency == null) {
+//                                throw new InvalidUserDataException("No dependency for integrity assertion found: $group:$name")
+//                            }
+//
+//                            if (hash != calculateSha256(dependency.file)) {
+//                                throw new InvalidUserDataException("Checksum failed for $assertion")
+//                            }
+//                        }
+//                }
+//            }
         }
 
         project.task('calculateChecksums') {

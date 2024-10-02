@@ -363,7 +363,7 @@ dependencies {
     implementation ('com.davemorrissey.labs:subsampling-scale-image-view:3.6.0') {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
-    implementation ('cn.carbswang.android:NumberPickerView:1.0.9') {
+    implementation ('com.github.Carbs0126:NumberPickerView:master-SNAPSHOT') {
         exclude group: 'com.android.support', module: 'appcompat-v7'
     }
     implementation ('com.tomergoldst.android:tooltips:1.0.6') {
@@ -374,7 +374,8 @@ dependencies {
         exclude group: 'com.squareup.okhttp', module: 'okhttp-urlconnection'
     }
     implementation 'com.annimon:stream:1.1.8'
-    implementation ('com.takisoft.fix:colorpicker:0.9.1') {
+
+    implementation ('com.takisoft.colorpicker:colorpicker:1.0.1') {
         exclude group: 'com.android.support', module: 'appcompat-v7'
         exclude group: 'com.android.support', module: 'recyclerview-v7'
     }

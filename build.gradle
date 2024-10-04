@@ -5,6 +5,9 @@ buildscript {
         maven {
             url 'https://jitpack.io'
         }
+        maven {
+            url 'https://google.bintray.com/exoplayer/'
+        }
         jcenter {
             content {
                 includeVersion 'org.jetbrains.trove4j', 'trove4j', '20160824'

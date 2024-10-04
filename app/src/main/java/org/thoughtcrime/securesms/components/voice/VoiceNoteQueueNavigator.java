@@ -6,8 +6,10 @@ import android.support.v4.media.session.MediaSessionCompat;
 import androidx.annotation.NonNull;
 
 import com.vhall.android.exoplayer2.Player;
-import com.google.android.exoplayer2.ext.mediasession.TimelineQueueEditor;
-import com.google.android.exoplayer2.ext.mediasession.TimelineQueueNavigator;
+
+import org.thoughtcrime.securesms.exo.TimelineQueueEditor;
+import org.thoughtcrime.securesms.exo.TimelineQueueNavigator;
+
 
 /**
  * Navigator to help support seek forward and back.
@@ -20,6 +22,7 @@ final class VoiceNoteQueueNavigator extends TimelineQueueNavigator {
     super(mediaSession);
     this.queueDataAdapter = queueDataAdapter;
   }
+
 
   @Override
   public MediaDescriptionCompat getMediaDescription(Player player, int windowIndex) {

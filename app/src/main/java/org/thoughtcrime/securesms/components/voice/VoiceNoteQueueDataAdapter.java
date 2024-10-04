@@ -6,10 +6,8 @@ import android.support.v4.media.MediaDescriptionCompat;
 import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 
-
-import com.google.android.exoplayer2.ext.mediasession.TimelineQueueEditor;
-
 import org.signal.core.util.logging.Log;
+import org.thoughtcrime.securesms.exo.TimelineQueueEditor;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -29,11 +29,11 @@ import com.vhall.android.exoplayer2.LoadControl;
 import com.vhall.android.exoplayer2.Player;
 import com.vhall.android.exoplayer2.SimpleExoPlayer;
 import com.vhall.android.exoplayer2.audio.AudioAttributes;
-import com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector;
 import com.vhall.android.exoplayer2.trackselection.DefaultTrackSelector;
 import com.vhall.android.exoplayer2.ui.PlayerNotificationManager;
 
 import org.signal.core.util.logging.Log;
+import org.thoughtcrime.securesms.exo.MediaSessionConnector;
 
 import java.util.Collections;
 import java.util.List;
@@ -54,7 +54,7 @@ public class VoiceNotePlaybackService extends MediaBrowserServiceCompat {
                                                 PlaybackStateCompat.ACTION_PLAY_PAUSE;
 
   private MediaSessionCompat           mediaSession;
-  private MediaSessionConnector        mediaSessionConnector;
+  private MediaSessionConnector mediaSessionConnector;
   private PlaybackStateCompat.Builder  stateBuilder;
   private SimpleExoPlayer              player;
   private BecomingNoisyReceiver        becomingNoisyReceiver;

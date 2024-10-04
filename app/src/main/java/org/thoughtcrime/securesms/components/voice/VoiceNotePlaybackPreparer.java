@@ -16,13 +16,13 @@ import com.annimon.stream.Stream;
 import com.vhall.android.exoplayer2.Player;
 import com.vhall.android.exoplayer2.SimpleExoPlayer;
 import com.vhall.android.exoplayer2.Timeline;
-import com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector;
 import com.vhall.android.exoplayer2.source.ConcatenatingMediaSource;
 
 import org.signal.core.util.logging.Log;
 import org.thoughtcrime.securesms.database.DatabaseFactory;
 import org.thoughtcrime.securesms.database.NoSuchMessageException;
 import org.thoughtcrime.securesms.database.model.MessageRecord;
+import org.thoughtcrime.securesms.exo.MediaSessionConnector;
 import org.thoughtcrime.securesms.util.MessageRecordUtil;
 import org.thoughtcrime.securesms.util.Util;
 import org.thoughtcrime.securesms.util.concurrent.SimpleTask;

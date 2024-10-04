@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-import com.google.android.exoplayer2.util.MimeTypes;
+import com.vhall.android.exoplayer2.util.MimeTypes;
 
 import org.signal.core.util.logging.Log;
 import org.thoughtcrime.securesms.media.MediaInput;

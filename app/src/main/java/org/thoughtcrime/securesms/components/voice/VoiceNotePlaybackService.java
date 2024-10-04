@@ -20,18 +20,18 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.media.MediaBrowserServiceCompat;
 
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.DefaultLoadControl;
-import com.google.android.exoplayer2.DefaultRenderersFactory;
-import com.google.android.exoplayer2.ExoPlaybackException;
-import com.google.android.exoplayer2.ExoPlayerFactory;
-import com.google.android.exoplayer2.LoadControl;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.google.android.exoplayer2.audio.AudioAttributes;
+import com.vhall.android.exoplayer2.C;
+import com.vhall.android.exoplayer2.DefaultLoadControl;
+import com.vhall.android.exoplayer2.DefaultRenderersFactory;
+import com.vhall.android.exoplayer2.ExoPlaybackException;
+import com.vhall.android.exoplayer2.ExoPlayerFactory;
+import com.vhall.android.exoplayer2.LoadControl;
+import com.vhall.android.exoplayer2.Player;
+import com.vhall.android.exoplayer2.SimpleExoPlayer;
+import com.vhall.android.exoplayer2.audio.AudioAttributes;
 import com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector;
-import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
-import com.google.android.exoplayer2.ui.PlayerNotificationManager;
+import com.vhall.android.exoplayer2.trackselection.DefaultTrackSelector;
+import com.vhall.android.exoplayer2.ui.PlayerNotificationManager;
 
 import org.signal.core.util.logging.Log;
 

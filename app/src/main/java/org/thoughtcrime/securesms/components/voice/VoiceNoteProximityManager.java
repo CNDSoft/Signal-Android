@@ -12,11 +12,11 @@ import android.support.v4.media.MediaDescriptionCompat;
 
 import androidx.annotation.NonNull;
 
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.google.android.exoplayer2.audio.AudioAttributes;
-import com.google.android.exoplayer2.util.Util;
+import com.vhall.android.exoplayer2.C;
+import com.vhall.android.exoplayer2.Player;
+import com.vhall.android.exoplayer2.SimpleExoPlayer;
+import com.vhall.android.exoplayer2.audio.AudioAttributes;
+import com.vhall.android.exoplayer2.util.Util;
 
 import org.signal.core.util.logging.Log;
 import org.thoughtcrime.securesms.dependencies.ApplicationDependencies;

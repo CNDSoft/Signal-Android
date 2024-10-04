@@ -5,11 +5,11 @@ import android.support.v4.media.MediaDescriptionCompat;
 
 import androidx.annotation.Nullable;
 
-import com.google.android.exoplayer2.extractor.DefaultExtractorsFactory;
-import com.google.android.exoplayer2.extractor.ExtractorsFactory;
-import com.google.android.exoplayer2.source.ExtractorMediaSource;
-import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
+import com.vhall.android.exoplayer2.extractor.DefaultExtractorsFactory;
+import com.vhall.android.exoplayer2.extractor.ExtractorsFactory;
+import com.vhall.android.exoplayer2.source.ExtractorMediaSource;
+import com.vhall.android.exoplayer2.source.MediaSource;
+import com.vhall.android.exoplayer2.upstream.DefaultDataSourceFactory;
 
 import org.thoughtcrime.securesms.video.exo.AttachmentDataSourceFactory;
 

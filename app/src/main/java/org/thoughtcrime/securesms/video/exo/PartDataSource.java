@@ -7,9 +7,9 @@ import android.net.Uri;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.google.android.exoplayer2.upstream.DataSource;
-import com.google.android.exoplayer2.upstream.DataSpec;
-import com.google.android.exoplayer2.upstream.TransferListener;
+import com.vhall.android.exoplayer2.upstream.DataSource;
+import com.vhall.android.exoplayer2.upstream.DataSpec;
+import com.vhall.android.exoplayer2.upstream.TransferListener;
 
 import org.thoughtcrime.securesms.attachments.Attachment;
 import org.thoughtcrime.securesms.database.AttachmentDatabase;

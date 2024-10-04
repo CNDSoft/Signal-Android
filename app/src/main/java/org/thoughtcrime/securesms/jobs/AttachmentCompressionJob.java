@@ -5,7 +5,7 @@ import android.media.MediaDataSource;
 
 import androidx.annotation.NonNull;
 
-import com.google.android.exoplayer2.util.MimeTypes;
+import com.vhall.android.exoplayer2.util.MimeTypes;
 
 import org.greenrobot.eventbus.EventBus;
 import org.signal.core.util.logging.Log;

@@ -13,11 +13,11 @@ import androidx.annotation.Nullable;
 import androidx.annotation.WorkerThread;
 
 import com.annimon.stream.Stream;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.google.android.exoplayer2.Timeline;
+import com.vhall.android.exoplayer2.Player;
+import com.vhall.android.exoplayer2.SimpleExoPlayer;
+import com.vhall.android.exoplayer2.Timeline;
 import com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector;
-import com.google.android.exoplayer2.source.ConcatenatingMediaSource;
+import com.vhall.android.exoplayer2.source.ConcatenatingMediaSource;
 
 import org.signal.core.util.logging.Log;
 import org.thoughtcrime.securesms.database.DatabaseFactory;

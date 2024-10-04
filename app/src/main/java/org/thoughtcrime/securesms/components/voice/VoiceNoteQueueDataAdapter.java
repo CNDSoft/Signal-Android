@@ -6,6 +6,7 @@ import android.support.v4.media.MediaDescriptionCompat;
 import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 
+
 import com.google.android.exoplayer2.ext.mediasession.TimelineQueueEditor;
 
 import org.signal.core.util.logging.Log;
@@ -26,7 +27,6 @@ final class VoiceNoteQueueDataAdapter implements TimelineQueueEditor.QueueDataAd
 
   private final List<MediaDescriptionCompat> descriptions = new LinkedList<>();
 
-  @Override
   public MediaDescriptionCompat getMediaDescription(int position) {
     if (descriptions.size() <= position) {
       Log.i(TAG, "getMediaDescription: Returning EMPTY MediaDescriptionCompat for index " + position);

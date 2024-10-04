@@ -2,9 +2,9 @@ package org.thoughtcrime.securesms.components.voice;
 
 import androidx.annotation.NonNull;
 
-import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.DefaultControlDispatcher;
-import com.google.android.exoplayer2.Player;
+import com.vhall.android.exoplayer2.C;
+import com.vhall.android.exoplayer2.DefaultControlDispatcher;
+import com.vhall.android.exoplayer2.Player;
 
 public class VoiceNoteNotificationControlDispatcher extends DefaultControlDispatcher {
 

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "442296345417",
+    "project_id": "signal-app-db0e1",
+    "storage_bucket": "signal-app-db0e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442296345417:android:0ab35fd9c6354292a33098",
+        "android_client_info": {
+          "package_name": "org.thoughtcrime.securesms"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw2lDkXbmSgIdWnA9S6EIllQvxa0A34R8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

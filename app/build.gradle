@@ -105,11 +105,11 @@ android {
         project.ext.set("archivesBaseName", "Signal");
 
         buildConfigField "long", "BUILD_TIMESTAMP", getLastCommitTimestamp() + "L"
-        buildConfigField "String", "SIGNAL_URL", "\"http://38.242.239.163:8080\""
-        buildConfigField "String", "STORAGE_URL", "\"http://38.242.239.163:8080\""
-        buildConfigField "String", "SIGNAL_CDN_URL", "\"http://38.242.239.163:8080\""
-        buildConfigField "String", "SIGNAL_CDN2_URL", "\"http://38.242.239.163:8080\""
-        buildConfigField "String", "SIGNAL_CONTACT_DISCOVERY_URL", "\"http://38.242.239.163:8080\""
+        buildConfigField "String", "SIGNAL_URL", "\"https://registry.rasensoft.com\""
+        buildConfigField "String", "STORAGE_URL", "\"https://registry.rasensoft.com\""
+        buildConfigField "String", "SIGNAL_CDN_URL", "\"https://registry.rasensoft.com\""
+        buildConfigField "String", "SIGNAL_CDN2_URL", "\"https://registry.rasensoft.com\""
+        buildConfigField "String", "SIGNAL_CONTACT_DISCOVERY_URL", "\"https://registry.rasensoft.com\""
         buildConfigField "String", "SIGNAL_SERVICE_STATUS_URL", "\"uptime.signal.org\""
         buildConfigField "String", "SIGNAL_KEY_BACKUP_URL", "\"http://38.242.239.163:8080\""
         buildConfigField "String", "SIGNAL_SFU_URL", "\"http://38.242.239.163:8080\""
@@ -134,6 +134,7 @@ android {
 
         splits {
             abi {
+                enable true
                 enable true
                 reset()
                 include 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
